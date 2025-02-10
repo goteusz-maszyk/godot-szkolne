@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://x8eet86uk4st"]
+[gd_scene load_steps=2 format=3 uid="uid://laipen3w1s7o"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://x8eet86uk4st" path="res://winscreen.tscn" id="1_24rkk"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="WinScreen" parent="CanvasLayer" instance=ExtResource("1_24rkk")]
